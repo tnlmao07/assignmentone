@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout task</title>
+    <style>
+        *{
+            margin: 0px auto;
+            text-align: center;
+            font-family: monospace;
+        }
+        .main{
+            width: 95%;
+            background-color: rgb(44, 42, 42);
+        }
+        .header{
+            width: 90%;
+            height: 40px;
+            margin-top: 10px;
+            padding: 20px;
+            font-size:30px;
+            color: black;
+            background-color: gray;
+            background-image: url("airline-banner-common.jpg");
+        }
+        .menu{
+            width: 90%;
+            height: 40px;
+            padding: 20px;
+            font-size: 20px;
+            background-image: url("images.jpg");
+
+        }
+        .anchor{
+            display: inline-block;
+            padding: 20px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: deeppink;
+            text-decoration: underline;
+        }
+        .container{
+            width: 90%;
+            height:300px;
+            padding: 20px;
+
+        }
+        #lside{
+            width: 20%;
+            height: 300px;
+            border: 1px black solid;
+            float: left;
+            color: white;
+            background-image: url("wallpaperflare.com_wallpaper\ \(1\).jpg");
+            
+        }
+        #content{
+            width: 58.7%;
+            height: 300px;
+            border: 1px black solid;
+            float: left;
+            color: black;
+            margin-left: 4px;
+            background-image: url("juOYAZ5.jpg")
+        }
+        #rside{
+            width: 20%;
+            height: 300px;
+            border: 1px black solid;
+            float: right;
+            color: white;
+            background-image: url("wallpaperflare.com_wallpaper\ \(2\).jpg");
+        }
+        .lsidebar{
+            text-align: left;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        #para{
+            text-align: justify;
+            font-size: 18px;
+            padding: 20px;
+            color: rgb(43, 39, 39);
+        }
+        .footer{
+            width: 90%;
+            height:40px;
+            color: black;
+            padding: 20px;
+            font-size: 25px;
+            background-image: url("images.jpg");
+        }
+        @media screen and (max-width:1020px) {
+            .header{width: 800px;}
+            #lside{width: 80%;}
+            #content{width: 80%;}
+            #rside{width: 80%;}
+            #para{width: 80%;}
+            .menu{width: 80%;}
+            .footer{width: 50%;}
+        }
+        @media screen and (max-width:820px) {
+            .header{width: 800px;}
+            #lside{width: 80%;}
+            #content{width: 80%;}
+            #rside{width: 80%;}
+            #para{width: 80%;}
+            .menu{width: 80%;}
+            .footer{width: 50%;}
+        }
+        @media screen and (max-width:510px) {
+            .header{width: 800px;}
+            #lside{width: 80%;}
+            #content{width: 80%;}
+            #rside{width: 80%;}
+            #para{width: 80%;}
+            .menu{width: 80%;}
+            .footer{width: 50%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+          Welcome to travel.com
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="anchor"><a  href="#">Home</a></li>
+                <li class="anchor"><a href="#">About US</a></li>
+                <li class="anchor"><a href="#">Contact</a></li>
+                <li class="anchor"><a href="#">Help</a></li>
+                <li class="anchor"><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="1" id="lside">
+                <ul>
+                    <li class="lsidebar">Delhi</li>
+                    <li class="lsidebar">Shimla</li>
+                    <li class="lsidebar">Manali</li>
+                    <li class="lsidebar">Dehradun</li>
+                    <li class="lsidebar">Kaza</li>
+                    <li class="lsidebar">Leh</li>
+                    <li class="lsidebar">Reckong Peo</li>
+                    <li class="lsidebar">Mukteshwar</li>
+                    <li class="lsidebar">Nainital</li>
+                </ul>
+            </div>
+            <div  class="1" id="content">
+                <p id="para">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magnam sapiente quisquam corporis ratione consequatur non vitae quo vero adipisci! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam vel illo dolor deleniti, similique eum quam beatae cumque a. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, fuga dignissimos modi vel reprehenderit deserunt provident quas nisi fugit voluptate voluptatibus magnam asperiores ad necessitatibus alias repellendus quos, in commodi similique. Voluptatem, libero iste dolor debitis corporis eveniet placeat aut neque laborum architecto ipsa quam accusantium illum repudiandae, quod deleniti.
+                </p>
+            </div>
+            <div  class="1" id="rside">
+                <ul>
+                    <li class="lsidebar">Shrinagar</li>
+                    <li class="lsidebar">Pahalgam</li>
+                    <li class="lsidebar">Sonmarg</li>
+                    <li class="lsidebar">Gulmarg</li>
+                    <li class="lsidebar">Dharamshala</li>
+                    <li class="lsidebar">Dalhousie</li>
+                    <li class="lsidebar">Kedarnath</li>
+                    <li class="lsidebar">Haridwar</li>
+                    <li class="lsidebar">Rishikesh</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            &copy; travel.com
+        </div>
+    </div>
+</body>
+</html>
